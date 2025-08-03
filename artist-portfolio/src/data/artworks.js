@@ -1,6 +1,5 @@
-
 import artwork1 from '/images/artwork/IMG_4035 2.jpg';
-import artwork2 from '/images/artwork/IMG_4035.jpg';
+import artwork2 from '/images/artwork/IMG_4078.jpg';
 import artwork3 from '/images/artwork/IMG_4036.jpg';
 import artwork4 from '/images/artwork/IMG_4037.jpg';
 import artwork5 from '/images/artwork/IMG_4038.jpg';
@@ -9,7 +8,6 @@ import artwork7 from '/images/artwork/IMG_4040.jpg';
 import artwork8 from '/images/artwork/IMG_4041.jpg';
 import artwork9 from '/images/artwork/IMG_4042.jpg';
 import artwork10 from '/images/artwork/IMG_4043.jpg';
-import artwork11 from '/images/artwork/IMG_4044.jpg';
 import artwork12 from '/images/artwork/IMG_4045.jpg';
 import artwork13 from '/images/artwork/IMG_4046.jpg';
 import artwork14 from '/images/artwork/IMG_4047.jpg';
@@ -42,7 +40,6 @@ import artwork40 from '/images/artwork/IMG_4074.jpg';
 import artwork41 from '/images/artwork/IMG_4075.jpg';
 import artwork42 from '/images/artwork/IMG_4076.jpg';
 import artwork43 from '/images/artwork/IMG_4078.jpg';
-import artwork44 from '/images/artwork/IMG_4079.jpg';
 
 export const artworks = [
   {
@@ -53,10 +50,10 @@ export const artworks = [
     description: 'This is a beautiful piece of art.'
   },
   {
-    id: 'IMG_4035',
+    id: 'IMG_4078',
     title: 'Artwork 2',
     image: artwork2,
-    dimensions: '2102 x 3455',
+    dimensions: '2378 x 1970',
     description: 'This is a beautiful piece of art.'
   },
   {
@@ -113,13 +110,6 @@ export const artworks = [
     title: 'Artwork 10',
     image: artwork10,
     dimensions: '1488 x 2591',
-    description: 'This is a beautiful piece of art.'
-  },
-  {
-    id: 'IMG_4044',
-    title: 'Artwork 11',
-    image: artwork11,
-    dimensions: '2011 x 1916',
     description: 'This is a beautiful piece of art.'
   },
   {
@@ -344,13 +334,6 @@ export const artworks = [
     title: 'Artwork 43',
     image: artwork43,
     dimensions: '2378 x 1970',
-    description: 'This is a beautiful piece of art.'
-  },
-  {
-    id: 'IMG_4079',
-    title: 'Artwork 44',
-    image: artwork44,
-    dimensions: '2518 x 2124',
     description: 'This is a beautiful piece of art.'
   }
 ]
