@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import artworks from '../data/artworks';
+import { Card, CardMedia, CardContent, Typography } from '@mui/material';
 
 function Artwork() {
   const { id } = useParams();
@@ -8,13 +9,27 @@ function Artwork() {
   if (!art) return <p>Artwork not found.</p>;
 
   return (
-    <div>
-      <h2>{art.title}</h2>
-      <img src={art.image} alt={art.title} />
-      <p>{art.description}</p>
-      <p><strong>Medium:</strong> {art.medium}</p>
-      <p><strong>Dimensions:</strong> {art.dimensions}</p>
-    </div>
+    <Card>
+      <CardMedia
+        component="img"
+        image={art.image}
+        alt={art.title}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {art.title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {art.description}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          <strong>Medium:</strong> {art.medium}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          <strong>Dimensions:</strong> {art.dimensions}
+        </Typography>
+      </CardContent>
+    </Card>
   );
 }
 
