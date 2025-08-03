@@ -5,7 +5,7 @@ import featured from '/images/IMG_4044.jpg'
 function Home() {
   return (
     <Box sx={{ textAlign: 'center', mt: 8 }}>
-      <img src={featured} alt="Artist's work" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+      <img src={featured} alt="Artist's work" style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'contain' }} />
       <Typography variant="h2" component="h1" gutterBottom sx={{ mt: 4 }}>
         Welcome to My Art Portfolio
       </Typography>
