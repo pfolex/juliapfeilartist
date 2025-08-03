@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import artworks from '../data/artworks';
+import { artworks } from '../data/artworks.js';
 import { Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
 
 function Gallery() {
@@ -14,7 +14,7 @@ function Gallery() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image={art.thumbnail}
+                  image={art.image}
                   alt={art.title}
                 />
                 <CardContent>

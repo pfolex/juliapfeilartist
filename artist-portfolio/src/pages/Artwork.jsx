@@ -1,37 +1,22 @@
 import { useParams } from 'react-router-dom';
-import artworks from '../data/artworks';
-import { Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { artworks } from '../data/artworks.js';
 
 function Artwork() {
   const { id } = useParams();
   const art = artworks.find(a => a.id === id);
 
-  if (!art) return <p>Artwork not found.</p>;
+  if (!art) {
+    return <div>Artwork not found</div>;
+  }
 
   return (
-    <Card>
-      <CardMedia
-        component="img"
-        image={art.image}
-        alt={art.title}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {art.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {art.description}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          <strong>Medium:</strong> {art.medium}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          <strong>Dimensions:</strong> {art.dimensions}
-        </Typography>
-      </CardContent>
-    </Card>
+    <div>
+      <h2>{art.title}</h2>
+      <img src={art.image} alt={art.title} style={{ maxWidth: '100%' }} />
+      <p>Dimensions: {art.dimensions}</p>
+      <p>{art.description}</p>
+    </div>
   );
 }
 
 export default Artwork;
-
