@@ -5,7 +5,7 @@ import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/juliapfeilartist">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
