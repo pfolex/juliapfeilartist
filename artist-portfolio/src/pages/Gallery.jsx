@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { artworks } from '../data/artworks.js';
-import frame from '/images/frame.png';
+import frame from '../assets/images/frame.png';
 import { Grid } from '@mui/material';
 import './Gallery.css';
 
