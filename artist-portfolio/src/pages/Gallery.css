@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px; /* Space between artworks */
+  min-height: calc(100vh - 64px - 64px); /* Adjust based on Navbar/Footer height */
+  width: 100%; /* Ensure it takes full width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .artwork-item {
