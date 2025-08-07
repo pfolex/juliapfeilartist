@@ -1,24 +1,40 @@
+.gallery-container {
+  background-color: #f0f0f0; /* Light grey/beige for a wall effect */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Space between artworks */
+}
 
-.frame-container {
+.artwork-item {
   position: relative;
-  width: 100%;
-  padding-bottom: 100%; /* 1:1 aspect ratio */
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  background-color: #fff; /* White background for the "canvas" */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  border: 10px solid #ccc; /* Simple frame effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.artwork-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the entire image is visible within the frame */
+}
+
+/* Existing styles, if any, can be integrated or removed if redundant */
+.frame-container {
+  /* This might become redundant or need adjustment */
 }
 
 .frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  /* This might become redundant or need adjustment */
 }
 
 .artwork {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
+  /* This might become redundant or need adjustment */
 }

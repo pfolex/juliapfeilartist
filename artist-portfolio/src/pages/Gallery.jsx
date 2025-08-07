@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import './Gallery.css';
-const frame = '/images/frame.png';
 
 const Gallery = () => {
   const [artworks, setArtworks] = useState([]);
@@ -22,14 +21,11 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="gallery">
+    <div className="gallery-container">
       {artworks.map((artwork, index) => (
-        <div key={index} className="gallery-item">
+        <div key={index} className="artwork-item">
           <Link to={`/artwork/${artwork.id}`}>
-            <div className="frame-container">
-              <img src={frame} alt="frame" className="frame" />
-              <img src={artwork.src} alt={artwork.alt} className="artwork" />
-            </div>
+            <img src={artwork.src} alt={artwork.alt} />
           </Link>
         </div>
       ))}
