@@ -26,20 +26,20 @@ import artwork26 from '/public/images/artwork/IMG_4059.jpg';
 import artwork27 from '/public/images/artwork/IMG_4060.jpg';
 import artwork28 from '/public/images/artwork/IMG_4061.jpg';
 import artwork29 from '/public/images/artwork/IMG_4062.jpg';
-import artwork30 from '/images/artwork/IMG_4063.jpg';
-import artwork31 from '/images/artwork/IMG_4064.jpg';
-import artwork32 from '/images/artwork/IMG_4065.jpg';
-import artwork33 from '/images/artwork/IMG_4066.jpg';
-import artwork34 from '/images/artwork/IMG_4067.jpg';
-import artwork35 from '/images/artwork/IMG_4068.jpg';
-import artwork36 from '/images/artwork/IMG_4069.jpg';
-import artwork37 from '/images/artwork/IMG_4070.jpg';
-import artwork38 from '/images/artwork/IMG_4072.jpg';
-import artwork39 from '/images/artwork/IMG_4073.jpg';
-import artwork40 from '/images/artwork/IMG_4074.jpg';
-import artwork41 from '/images/artwork/IMG_4075.jpg';
-import artwork42 from '/images/artwork/IMG_4076.jpg';
-import artwork43 from '/images/artwork/IMG_4078.jpg';
+import artwork30 from '/public/images/artwork/IMG_4063.jpg';
+import artwork31 from '/public/images/artwork/IMG_4064.jpg';
+import artwork32 from '/public/images/artwork/IMG_4065.jpg';
+import artwork33 from '/public/images/artwork/IMG_4066.jpg';
+import artwork34 from '/public/images/artwork/IMG_4067.jpg';
+import artwork35 from '/public/images/artwork/IMG_4068.jpg';
+import artwork36 from '/public/images/artwork/IMG_4069.jpg';
+import artwork37 from '/public/images/artwork/IMG_4070.jpg';
+import artwork38 from '/public/images/artwork/IMG_4072.jpg';
+import artwork39 from '/public/images/artwork/IMG_4073.jpg';
+import artwork40 from '/public/images/artwork/IMG_4074.jpg';
+import artwork41 from '/public/images/artwork/IMG_4075.jpg';
+import artwork42 from '/public/images/artwork/IMG_4076.jpg';
+import artwork43 from '/public/images/artwork/IMG_4078.jpg';
 
 export const artworks = [
   {
