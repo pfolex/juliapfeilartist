@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { artworks } from '../data/artworks.js';
+import frame from '../../public/images/frame.png';
 import { Grid } from '@mui/material';
 import './Gallery.css';
 
@@ -12,7 +13,7 @@ function Gallery() {
           <Grid item xs={12} sm={6} md={4} key={art.id}>
             <Link to={`/artwork/${art.id}`}>
               <div className="frame-container">
-                <img src="/images/frame.png" alt="Art Frame" className="frame" />
+                <img src={frame} alt="Art Frame" className="frame" />
                 <img src={art.image} alt={art.title} className="artwork" />
               </div>
             </Link>
