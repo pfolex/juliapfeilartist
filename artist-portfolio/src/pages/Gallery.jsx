@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import './Gallery.css';
-import frame from '../assets/images/frame.png';
+const frame = '/images/frame.png';
 
 const Gallery = () => {
   const [artworks, setArtworks] = useState([]);
