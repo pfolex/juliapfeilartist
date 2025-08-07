@@ -11,7 +11,7 @@ const Gallery = () => {
       const imageModules = import.meta.glob('/public/images/artwork/*.{png,jpg,jpeg,svg}');
       const imagePaths = Object.keys(imageModules);
       const loadedArtworks = imagePaths.map(path => ({
-        src: path,
+        src: path.replace('/public', ''),
         id: path.split('/').pop().split('.')[0], // Or generate a unique ID differently
         alt: `Artwork ${imagePaths.indexOf(path) + 1}`
       }));
