@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { artworks } from '../data/artworks.js';
-import { Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
+import './Gallery.css';
 
 function Gallery() {
   return (
@@ -9,21 +10,12 @@ function Gallery() {
       <Grid container spacing={2}>
         {artworks.map(art => (
           <Grid item xs={12} sm={6} md={4} key={art.id}>
-            <Card>
-              <Link to={`/artwork/${art.id}`}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={art.image}
-                  alt={art.title}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {art.title}
-                  </Typography>
-                </CardContent>
-              </Link>
-            </Card>
+            <Link to={`/artwork/${art.id}`}>
+              <div className="frame-container">
+                <img src="/images/frame.png" alt="Art Frame" className="frame" />
+                <img src={art.image} alt={art.title} className="artwork" />
+              </div>
+            </Link>
           </Grid>
         ))}
       </Grid>
